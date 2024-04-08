@@ -201,7 +201,6 @@ export default function App() {
               </div>
               {/*               
               <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
-            </div>
             <div className="buttons-group">
               <a
                 href="https://github.com/dmresende/portifolioresende"
@@ -219,6 +218,7 @@ export default function App() {
               >
                 PROJETO
               </a>
+            </div>
             </div>
           </div>
         </div>
