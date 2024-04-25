@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Noto+Sans:wght@400;700&display=swap');
-
-:root {
-    --color_primary: #D9D9D9;
-    --color_secondary: #FFFFFF;
-    --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary));
-    --color_hover: #464343;
-}
+@import url("./shared/styles/colors.css");
 
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     text-decoration: none;
-    color: #000000;
     background: transparent;
     font-family: 'Barlow', sans-serif;
 }
@@ -150,7 +143,7 @@ h1 {
         justify-content: center;
         height: 90vh;
         width: 100%;
-        
+
     }
 
     .container-col-2 {
@@ -238,7 +231,7 @@ h1 {
         height: 100%;
         width: 100%;
         justify-content: center;
-        
+
     }
 
     .card:first-child {
@@ -364,30 +357,6 @@ h1 {
         font-size: 2.5vh;
         line-height: 3.2vh;
         margin: 3.5vh 2.5vh 0 2.5vh;
-    }
-
-    .badges {
-        display: flexbox;
-        justify-content: space-evenly;
-        text-align: center;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .badges img {
-        height: 5.5vh;
-        width: 5.5vh;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        transition: transform 0.3s ease-in-out;
-        border-radius: 50px;
-    }
-
-    .badges img:hover {
-        transform: scale(1.9);
-        border-radius: 8px;
     }
 
 
@@ -748,29 +717,6 @@ h1 {
         text-align: justify;
     }
 
-    .badges {
-        display: flexbox;
-        margin: 6% 15% 0 15%;
-        justify-content: space-evenly;
-        text-align: center;
-        align-items: center;
-
-    }
-
-    .badges img {
-        height: 2.8em;
-        width: 2.8em;
-        margin: 0 2vh 3vh 2vh;
-        padding: 10px;
-        border-radius: 50px;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .badges img:hover {
-        transform: scale(1.9);
-        border-radius: 8px;
-    }
-
     footer {
         background: #D9D9D9;
         width: 100%;
@@ -797,14 +743,15 @@ h1 {
 
 }
 
-.titles{
+.titles {
     text-align: center;
     padding: 10px;
     border-top: 10px;
     margin-top: 50px;
     margin: 3em 0em 0em 0em;
 }
-.rodape{
+
+.rodape {
     font-weight: bold;
 }
 
