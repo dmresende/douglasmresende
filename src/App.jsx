@@ -9,6 +9,7 @@ import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
 import PortfolioStacks from "./components/portfolio-stacks/index";
+import PortfolioFooter from "./components/portfolio-footer";
 
 export default function App() {
   return (
@@ -193,6 +194,7 @@ export default function App() {
               </div>
               {/*               
               <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
+            </div>
             <div className="buttons-group">
               <a
                 href="https://github.com/dmresende/portifolioresende"
@@ -210,7 +212,6 @@ export default function App() {
               >
                 PROJETO
               </a>
-            </div>
             </div>
           </div>
         </div>
@@ -254,9 +255,7 @@ export default function App() {
       {/* <!--Tecnologias--> */}
       <PortfolioStacks />
 
-      <footer>
-        <p className="rodape">@2023 - Douglas Resende</p>
-      </footer>
+      <PortfolioFooter />
 
       <link
         rel="stylesheet"
