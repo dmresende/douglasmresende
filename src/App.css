@@ -261,9 +261,9 @@ h1 {
     .card-body {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        /* PRECISO AJUSTAR */
+        /* height: 100%; */
         justify-content: space-between;
-        /* margin-top: 25%; */
     }
 
     .card-body h1 {
