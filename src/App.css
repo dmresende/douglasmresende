@@ -82,6 +82,7 @@ h1 {
         font-size: 2.2vh;
         text-align: center;
         width: 35vh;
+        color: #000;
     }
 
     .download:hover,
@@ -106,6 +107,7 @@ h1 {
         font-family: 'Barlow', sans-serif;
         font-size: 2.8vh;
         margin-left: 5vh;
+        color: #000;
     }
 
     .link:first-child {
@@ -255,7 +257,7 @@ h1 {
         size: contain center center;
         /* border-radius: 8px; */
     }
-    
+
     .card-body {
         display: flex;
         flex-direction: column;
@@ -388,25 +390,6 @@ h1 {
         transition: all ease-in 200ms;
         color: #fff;
     }
-
-    footer {
-        color: #ffffff;
-        background: #D9D9D9;
-        width: 100%;
-        height: 15vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25vh;
-    }
-
-
-    footer p {
-        font-family: 'Barlow', sans-serif;
-        font-size: 0.9em;
-        color: #000000;
-    }
-
 }
 
 /* Dimensionamento Responsivo - Mobile */
@@ -443,6 +426,7 @@ h1 {
         font-family: 'Barlow', sans-serif;
         font-size: 1.8vh;
         margin-left: 2vh;
+        color: #000;
     }
 
     .link:first-child {
@@ -567,6 +551,7 @@ h1 {
         margin-left: 5%;
         padding: 0.5em 0 0.5em 0;
         font-size: 2.2vh;
+        color: #000;
 
     }
 
@@ -717,22 +702,6 @@ h1 {
         text-align: justify;
     }
 
-    footer {
-        background: #D9D9D9;
-        width: 100%;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    footer p {
-        font-family: 'Barlow', sans-serif;
-        font-size: 0.9em;
-        color: #000000;
-    }
-
     .btn-top {
         font-size: 0;
         position: fixed;
@@ -749,10 +718,6 @@ h1 {
     border-top: 10px;
     margin-top: 50px;
     margin: 3em 0em 0em 0em;
-}
-
-.rodape {
-    font-weight: bold;
 }
 
 /* width */
