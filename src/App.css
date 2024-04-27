@@ -29,7 +29,6 @@ h1 {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     border-radius: 50px;
-
 }
 
 .projetoIcon img:hover {
@@ -91,7 +90,6 @@ h1 {
         color: #ffffff;
         animation: all ease-in 200ms;
         cursor: pointer;
-
     }
 
     .top {
@@ -145,7 +143,6 @@ h1 {
         justify-content: center;
         height: 90vh;
         width: 100%;
-
     }
 
     .container-col-2 {
@@ -205,7 +202,6 @@ h1 {
         font-size: 9vh;
     }
 
-
     .profile {
         height: 48vh;
         width: 48vh;
@@ -243,26 +239,20 @@ h1 {
 
     .card {
         position: relative;
-        /* height: 80%; */
         padding: 1.4em;
         background: #ffffff;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         border-radius: 8px;
-        /* margin-left: 3%; */
     }
 
     .image {
         width: 100%;
-        /* margin-top: -25%; */
         size: contain center center;
-        /* border-radius: 8px; */
     }
 
     .card-body {
         display: flex;
         flex-direction: column;
-        /* PRECISO AJUSTAR */
-        /* height: 100%; */
         justify-content: space-between;
     }
 
@@ -301,6 +291,7 @@ h1 {
         text-align: center;
         padding: 0.5em;
         width: 50%;
+        color: #000;
     }
 
     .card-button:last-child {
@@ -309,14 +300,11 @@ h1 {
         border-left: none;
     }
 
-
     .card-button:hover {
         background: var(--color_hover);
         color: #fff;
         transition: ease-in 200ms;
     }
-
-
 
     .fixed {
         left: 1rem;
@@ -360,36 +348,6 @@ h1 {
         line-height: 3.2vh;
         margin: 3.5vh 2.5vh 0 2.5vh;
     }
-
-
-    .btn-top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        z-index: 3;
-        border-radius: 100%;
-        height: 5.5vh;
-        width: 5.5vh;
-        padding: 1px;
-        background: var(--color_primary);
-        color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-
-    }
-
-    .btn-top i {
-        color: #ffffff;
-        scale: 0.9;
-    }
-
-    .btn-top:hover {
-        background: var(--color_hover);
-        transition: all ease-in 200ms;
-        color: #fff;
-    }
 }
 
 /* Dimensionamento Responsivo - Mobile */
@@ -407,7 +365,7 @@ h1 {
         margin-top: 0.2vh;
     }
 
-    spam {
+    span {
         background: #000;
         position: absolute;
         width: 100%;
@@ -700,14 +658,6 @@ h1 {
         margin: 5vh 4.7vh -2vh 4.7vh;
         line-height: 3.2vh;
         text-align: justify;
-    }
-
-    .btn-top {
-        font-size: 0;
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        z-index: -2;
     }
 
 }
