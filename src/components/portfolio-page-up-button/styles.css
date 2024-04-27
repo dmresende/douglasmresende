@@ -13,12 +13,17 @@
     width: 5.5vh;
     padding: 1px;
     background: var(--color_primary);
-    color: var(--color_secondary);
-    box-shadow: var(--color_shadow);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+.btn-top i {
+    color: #ffffff;
+    scale: 0.9;
 }
 
 .btn-top:hover {
     background: var(--color_hover);
     transition: all ease-in 200ms;
-    color: var(--color_secondary);
+    color: #fff;
 }
