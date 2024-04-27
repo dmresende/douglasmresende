@@ -12,18 +12,18 @@
     height: 5.5vh;
     width: 5.5vh;
     padding: 1px;
-    background: var(--color_primary);
+    background: var(--color-primary);
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
 }
 
 .btn-top i {
-    color: #ffffff;
+    color: #fff;
     scale: 0.9;
 }
 
 .btn-top:hover {
-    background: var(--color_hover);
+    background: var(--color-hover);
     transition: all ease-in 200ms;
     color: #fff;
 }

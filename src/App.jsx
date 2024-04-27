@@ -11,6 +11,7 @@ import portifolio from "./img/portifolio.png";
 import PortfolioStacks from "./components/portfolio-stacks/index";
 import PortfolioFooter from "./components/portfolio-footer/index";
 import PortfolioPageUpButton from "./components/portfolio-page-up-button/index";
+import PortfolioHeader from "./components/portifolio-header/index";
 
 export default function App() {
   return (
@@ -21,20 +22,7 @@ export default function App() {
         <span></span>
 
         <div className="container-col-1">
-          <div className="top">
-            <a className="link" href="#home">
-              Inicio
-            </a>
-            <a className="link" href="#projects">
-              Projetos
-            </a>
-            <a className="link" href="#about">
-              Sobre
-            </a>
-            <a className="link" href="#stacks">
-              Tecnologias
-            </a>
-          </div>
+          <PortfolioHeader />
 
           <div className="center">
             <div className="group">
