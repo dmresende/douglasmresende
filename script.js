@@ -1,72 +1,67 @@
 function showSkill(skill) {
+  
+
   const body = document.body;
-  const parameter = skill;
+
   const boxContent = document.querySelector(".skill-modal");
 
-  let divContent;
-  let content;
+  const skillDescriptions = {
+    html: "HTML é uma linguagem de marcação usada para criar páginas da web. Tais tags são usadas para estruturar o conteúdo.",
+    css: "CSS é uma linguagem usada para estilizar a apresentação de páginas da web, definindo o design, o layout e a aparência visual dos elementos HTML.",
+    js: "JavaScript é uma linguagem de programação, amplamente utilizada para criar interatividade em páginas da web, permitindo a manipulação dinâmica do conteúdo e do comportamento dos elementos da página.",
+    typescript: "TypeScript é uma linguagem de programação que estende o JavaScript adicionando tipagem estática. Ela oferece recursos para melhorar o desenvolvimento de aplicações web.",
+    react: "React e React-Native são bibliotecas JavaScript para construir interfaces de usuário. Elas são baseadas em componentes reutilizáveis e usam um Virtual DOM para otimizar atualizações de UI, tornando-as populares em aplicativos web dinâmicos e Apps para Android.",
+    dotnet: ".NET é uma plataforma de desenvolvimento de software criada pela Microsoft. Ela oferece ferramentas e bibliotecas para criar aplicativos robustos e escaláveis.",
+    csharp: "C# é uma linguagem de programação desenvolvida pela Microsoft. Ela oferece recursos para criar aplicativos eficientes e seguros.",
+    postgres: "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Ele oferece recursos para garantir desempenho e integridade dos dados.",
+    git: "Git é um sistema de controle de versão que registra alterações em arquivos, facilitando o gerenciamento do histórico de um projeto de software.",
+    sqlite: "SQLite é um banco de dados relacional leve e de código aberto. Ele oferece características para integração e desempenho em aplicativos de pequeno e médio porte."
+  };
+
+  const content = skillDescriptions[skill] || "Descrição não disponível para esta habilidade.";
 
   if (boxContent.classList.contains("skill-modal-hidden")) {
     body.classList.add("dark-background");
     boxContent.classList.remove("skill-modal-hidden");
   }
 
-  validateParameter();
-  showContent();
+  const divContent = `
+    <img class="skill-modal-close" src="img/skills/fechar.svg" alt="Btn close modal">
+    <p class="skill-modal-text">${content}</p>
+  `;
 
-  function validateParameter() {
-    if (parameter == "html") {
-      content =
-        "HTML é uma linguagem de marcação usada para criar páginas da web. Tais tags são usadas para estruturar o conteúdo.";
-    } else if (parameter == "css") {
-      content =
-        "CSS é uma linguagem usada para estilizar a apresentação de páginas da web, definindo o design, o layout e a aparência visual dos elementos HTML.";
-    } else if (parameter == "js") {
-      content =
-        "JavaScript é uma linguagem de programação, amplamente utilizada para criar interatividade em páginas da web, permitindo a manipulação dinâmica do conteúdo e do comportamento dos elementos da página.";
-    } else if (parameter == "typescript") {
-      content =
-        "TypeScript é uma linguagem de programação que estende o JavaScript adicionando tipagem estática. Quais recursos ela oferece para melhorar o desenvolvimento de aplicações web?.";
-    } else if (parameter == "react") {
-      content =
-        "React e React-Native são bibliotecas JavaScript para construir interfaces de usuário. Ela é baseada em componentes reutilizáveis ​​e usa um Virtual DOM para otimizar atualizações de UI, tornando-a popular em aplicativos web dinâmicos e App para android.";
-    } else if (parameter == "dotnet") {
-      content =
-        ".NET é uma plataforma de desenvolvimento de software criada pela Microsoft. Quais ferramentas e bibliotecas ela oferece para criar aplicativos robustos e escaláveis?";
-    } else if (parameter == "csharp") {
-      content =
-        "C# é uma linguagem de programação desenvolvida pela Microsoft. Quais recursos ela oferece para criar aplicativos eficientes e seguros.";
-    } else if (parameter == "postgres") {
-      content =
-        "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Quais recursos ele oferece para garantir desempenho e integridade dos dados.";
-    } else if (parameter == "git") {
-      content =
-        "Git é um sistema de controle de versão que registra alterações em arquivos, facilitando o gerenciamento do histórico de um projeto de software.";
-    } else if (parameter == "sqlite") {
-      content =
-        "SQLite é um banco de dados relacional leve e de código aberto. Quais características ele oferece para integração e desempenho em aplicativos de pequeno e médio porte.";
-    }
-  }
+  boxContent.innerHTML = divContent;
 
-  function showContent() {
-    divContent = `
-            <img class="skill-modal-close" src="img/skills/fechar.svg" alt="Btn close modal">
-            <p class="skill-modal-text">${content}</p>
-        `;
+  const btnClose = document.querySelector(".skill-modal-close");
+  
+  btnClose.addEventListener("click", () => {
+    boxContent.classList.add("skill-modal-hidden");
+    body.classList.remove("dark-background");
+  });
+}
 
-    boxContent.innerHTML = divContent;
-
-    closeSkill();
-  }
-
-  function closeSkill() {
-    const btnClose = document.querySelector(".skill-modal-close");
-
-    btnClose.addEventListener("click", hidden);
-
-    function hidden() {
-      boxContent.classList.add("skill-modal-hidden");
-      body.classList.remove("dark-background");
-    }
+// Função para alternar o tema
+function toggleTheme() {
+  const body = document.body;
+  const isDarkMode = body.classList.contains('dark-mode');
+  
+  if (isDarkMode) {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  } else {
+    body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
   }
 }
+
+// Adicionar evento de clique ao botão de alternância de tema
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', toggleTheme);
+
+// Verificar e aplicar o tema salvo ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+});

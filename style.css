@@ -6,21 +6,19 @@
   padding: 0;
 }
 
-:root {
-  --svg-color: #424953;
-}
 
 body {
-  background-color: #ffffff;
+  background-color: var(--cor-fundo);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark-background {
-  background-color: rgba(0, 0, 0, 50%);
+  background-color: var(--cor-fundo-escuro);
   transition: all 1s;
 }
 
 .dark-background::before {
-  background: rgba(0, 0, 0, 70%);
+  background: var(--cor-fundo-muito-escuro);
   content: "";
   height: 100%;
   left: 0;
@@ -62,7 +60,7 @@ body {
   padding: 0 50px 80px;
 }
 
-/* ----- Titles ----- */
+/* ----- Títulos ----- */
 .about-title,
 .skills-title,
 .services-title,
@@ -72,6 +70,7 @@ body {
 .contacts-title {
   font-size: 2.2rem;
   margin-bottom: 15px;
+  color: var(--cor-texto);
 }
 
 .services-title,
@@ -86,27 +85,34 @@ body {
 .education-academic-subtitle,
 .education-certifications-subtitle {
   text-align: center;
+  color: var(--cor-texto);
 }
 
 /* ---------- Home ---------- */
 .home-container {
   align-items: center;
   background: url(img/home/background.jpg) no-repeat bottom / cover;
-  color: #fff;
+  color: var(--cor-fundo);
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
   position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .home-container::before {
-  background: rgba(0, 0, 0, 70%);
+  background: var(--cor-overlay-home);
   content: "";
   height: 100%;
   left: 0;
   position: absolute;
   right: 0;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .home-container::before {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .home-img,
@@ -117,7 +123,7 @@ body {
 }
 
 .home-img {
-  border: 5px solid #fff;
+  border: 5px solid var(--cor-fundo);
   border-radius: 100%;
   margin-bottom: 20px;
   padding: 3px;
@@ -137,31 +143,42 @@ body {
 }
 
 .home-item-img {
-  filter: invert(1);
+  filter: brightness(0) invert(1);
   height: 25px;
 }
 
-/* ---------- About ---------- */
-.about-title {
-  color: #2d2d2b;
+.dark-mode .home-item-img {
+  filter: brightness(0) invert(var(--cor-fundo));
 }
 
-.about-box {
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  gap: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
+.theme-toggle svg {
+  fill: var(--cor-fundo);
+  width: 25px;
+  height: 25px;
+  transition: fill 0.3s ease;
+}
+
+.dark-mode .theme-toggle svg {
+  fill: var(--cor-fundo);
+}
+
+/* ---------- Sobre ---------- */
 .about-text {
   line-height: 2rem;
-  color: #2d2d2b;
+  color: var(--cor-texto);
 }
 
-/* ----- Services ----- */
-.services-title {
-  color: #2d2d2b;
-}
-
+/* ----- Serviços ----- */
 .services-items {
   display: flex;
   flex-wrap: wrap;
@@ -172,9 +189,9 @@ body {
 
 .service-item {
   align-items: center;
-  background-color: #2d2d2b;
+  background-color: var(--cor-secundaria);
   border-radius: 15px;
-  color: #fff;
+  color: var(--cor-texto-claro);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -183,7 +200,7 @@ body {
 }
 
 .service-item-img {
-  fill: #fff;
+  fill: var(--cor-texto-claro);
   height: 70px;
 }
 
@@ -195,10 +212,7 @@ body {
   text-align: center;
 }
 
-/* ---------- Skills ---------- */
-.skills-title {
-  color: #2d2d2b;
-}
+/* ---------- Habilidades ---------- */
 .skills-technologies {
   display: flex;
   flex-wrap: wrap;
@@ -208,8 +222,8 @@ body {
 }
 
 .skill-technology {
-  background: #ffffff;
-  border: 1px solid #c2c0c0;
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
   border-radius: 5px;
   cursor: pointer;
   outline: 1px solid transparent;
@@ -218,11 +232,11 @@ body {
 }
 
 .st0 {
-  fill: #424953;
+  fill: var(--cor-primaria);
 }
 
 .skill-technology:hover {
-  outline-color: #ccc9c9;
+  outline-color: var(--cor-borda);
   transition: all 1s;
 }
 
@@ -231,7 +245,7 @@ body {
 }
 
 .skill-modal {
-  background: #fff;
+  background: var(--cor-fundo);
   border-radius: 5px;
   left: 50%;
   padding: 30px;
@@ -259,12 +273,10 @@ body {
 
 .skill-modal-text {
   text-align: center;
+  color: var(--cor-texto);
 }
 
-/* ---------- Experiences ---------- */
-.experiences-title {
-  color: #2d2d2b;
-}
+/* ---------- Experiências ---------- */
 .experiences-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -272,9 +284,9 @@ body {
 }
 
 .experience-item {
-  background-color: #fff;
+  background-color: var(--cor-fundo);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #c2c0c0;
+  box-shadow: 0px 0px 10px var(--cor-borda);
   padding: 30px;
 }
 
@@ -282,6 +294,7 @@ body {
 .experience-item-period {
   font-size: 1.2rem;
   font-weight: 500;
+  color: var(--cor-texto);
 }
 
 .experience-list {
@@ -289,13 +302,10 @@ body {
   flex-direction: column;
   gap: 20px;
   margin: 20px 0 0 20px;
+  color: var(--cor-texto);
 }
 
-/* ---------- Education ---------- */
-.education-title {
-  color: #2d2d2b;
-}
-
+/* ---------- Educação ---------- */
 .education-items {
   display: grid;
   gap: 15px;
@@ -304,10 +314,10 @@ body {
 
 .education-academic,
 .education-certifications {
-  background-color: #fff;
+  background-color: var(--cor-fundo);
   border-radius: 5px;
-  color: #000;
-  box-shadow: 0px 0px 10px #c2c0c0;
+  color: var(--cor-texto);
+  box-shadow: 0px 0px 10px var(--cor-borda);
   padding: 30px;
 }
 
@@ -324,11 +334,7 @@ body {
   margin: 0 0 0 20px;
 }
 
-/* ---------- Portfolio ---------- */
-.portfolio-title {
-  color: #2d2d2b;
-}
-
+/* ---------- Portfólio ---------- */
 .portfolio-items {
   display: grid;
   gap: 10px;
@@ -338,9 +344,9 @@ body {
 }
 
 .portfolio-item {
-  background-color: #fff;
+  background-color: var(--cor-fundo);
   border-radius: 5px;
-  border: 1px solid #c2c0c0;
+  border: 1px solid var(--cor-borda);
 }
 
 .portfolio-item-image {
@@ -357,15 +363,11 @@ body {
 }
 
 .portfolio-item-link {
-  color: #424953;
+  color: var(--cor-texto);
   text-decoration: none;
 }
 
-/* ---------- Contacts ---------- */
-.contacts-title {
-  color: #2d2d2b;
-}
-
+/* ---------- Contatos ---------- */
 .contacts-items {
   display: grid;
   gap: 10px;
@@ -376,9 +378,9 @@ body {
 
 .contact-item {
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #c2c0c0;
-  color: #424953;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
   border-radius: 5px;
   display: flex;
   gap: 20px;
@@ -388,9 +390,32 @@ body {
 
 .contact-item-img {
   height: 30px;
+  filter: invert(var(--cor-icone));
 }
 
-/* ---------- Responsive ---------- */
+.botao-voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--cor-botao);
+  color: var(--cor-texto-claro);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.botao-voltar-topo:hover {
+  background-color: var(--cor-destaque);
+  transform: translateY(-3px);
+}
+
+/* ---------- Responsivo ---------- */
 @media (max-width: 500px) {
   .container,
   .services-container,
@@ -433,4 +458,42 @@ body {
   .contact-item {
     justify-content: center;
   }
+}
+
+/* Tema claro (padrão) */
+:root {
+  --cor-primaria: #424953;
+  --cor-secundaria: #2d2d2b;
+  --cor-fundo: #ffffff;
+  --cor-borda: #c2c0c0;
+  --cor-texto: #000000;
+  --cor-texto-claro: #ffffff;
+  --cor-fundo-escuro: #262c36;
+  --cor-fundo-muito-escuro: rgba(0, 0, 0, 70%);
+  --cor-destaque: #979a9e;
+  --cor-botao: #333333;
+  --cor-icone: 0;
+  --cor-overlay-home: rgba(0, 0, 0, 0.5);
+  --cor-botao-tema: #000000;
+}
+
+/* Tema escuro */
+.dark-mode {
+  --cor-primaria: #979a9e;
+  --cor-secundaria: #c2c0c0;
+  --cor-fundo: #262c36;
+  --cor-borda: #424953;
+  --cor-texto: #ffffff;
+  --cor-texto-claro: #262c36;
+  --cor-fundo-escuro: rgba(255, 255, 255, 50%);
+  --cor-fundo-muito-escuro: rgba(255, 255, 255, 70%);
+  --cor-destaque: #424953;
+  --cor-botao: #c2c0c0;
+  --cor-icone: 1;
+  --cor-overlay-home: rgba(255, 255, 255, 0.3);
+  --cor-botao-tema: #ffffff;
+}
+
+.home-container {
+  background-image: url(img/home/background.jpg) !important;
 }
