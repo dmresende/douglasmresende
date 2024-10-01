@@ -10,6 +10,7 @@
 body {
   background-color: var(--cor-fundo);
   transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
 }
 
 .dark-background {
@@ -32,6 +33,7 @@ body {
 .education-container,
 .portfolio-container,
 .contacts-container {
+  
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
@@ -413,6 +415,14 @@ body {
 .botao-voltar-topo:hover {
   background-color: var(--cor-destaque);
   transform: translateY(-3px);
+}
+
+.botao-voltar-topo:active {
+  transform: translateY(-1px);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ---------- Responsivo ---------- */
