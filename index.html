@@ -1,223 +1,484 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Douglas Resende | Desenvolvedor Full Stack</title>
-    <link rel="icon" href="/img/home/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="/img/home/favicon.svg" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
             },
-        }
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+  </head>
+  <body
+    class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300"
+  >
     <!-- Home -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('img/home/background.jpg');">
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center bg-cover bg-center relative"
+      style="background-image: url('img/home/background.jpg')"
+    >
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="text-center text-white z-10">
-          <img src="img/home/avatar.png" alt="Douglas Resende" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white">
-          <h1 class="text-4xl font-bold mb-2">Douglas Resende</h1>
-          <h2 class="text-2xl mb-6">Desenvolvedor Full Stack</h2>
-          <div class="flex justify-center items-center space-x-4">
-              <a href="https://github.com/dmresende" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-300 transition-colors">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-              </a>
-              <a href="https://www.linkedin.com/in/douglasmresende/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-300 transition-colors">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              </a>
-              <a href="mailto:douglasmresende@gmail.com" class="text-white hover:text-blue-300 transition-colors">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              </a>
-              <a href="https://drive.google.com/file/d/1mjBSUZK4EoOd-4DZKkvfbZyDECtSUbhx/view?usp=sharing" download class="text-white hover:text-blue-300 transition-colors">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-              </a>
-              <button id="theme-toggle" class="text-white hover:text-blue-300 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                  </svg>
-              </button>
-          </div>
+        <img
+          src="img/home/avatar.png"
+          alt="Douglas Resende"
+          class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white"
+        />
+        <h1 class="text-4xl font-bold mb-2">Douglas Resende</h1>
+        <h2 class="text-2xl mb-6">Desenvolvedor Full Stack</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://github.com/dmresende"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-blue-300 transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/douglasmresende/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-blue-300 transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:douglasmresende@gmail.com"
+            class="text-white hover:text-blue-300 transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1mjBSUZK4EoOd-4DZKkvfbZyDECtSUbhx/view?usp=sharing"
+            download
+            class="text-white hover:text-blue-300 transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+          </a>
+          <button
+            id="theme-toggle"
+            class="text-white hover:text-blue-300 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-  </section>
+    </section>
 
     <!-- About -->
     <section id="about" class="py-20 bg-white dark:bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Sobre Mim</h2>
-            <p class="text-lg text-center max-w-3xl mx-auto">
-              Sou desenvolvedor Full Stack com experiência em C#, API REST, .NET, Windows Forms, TS, REACT-NATIVE. Desde minha transição de carreira, tenho me dedicado a aprimorar minhas habilidades como desenvolvedor, com foco em ambientes cloud. Durante minha carreira, analisei, revisei e desenvolvi soluções para problemas em sistemas legados, incluindo a otimização de funcionalidades antigas e a implementação de novas soluções.
-            </p>
-        </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Sobre Mim</h2>
+        <p class="text-lg text-center max-w-3xl mx-auto">
+          Sou desenvolvedor Full Stack com experiência em C#, API REST, .NET,
+          Windows Forms, TS, REACT-NATIVE. Desde minha transição de carreira,
+          tenho me dedicado a aprimorar minhas habilidades como desenvolvedor,
+          com foco em ambientes cloud. Durante minha carreira, analisei, revisei
+          e desenvolvi soluções para problemas em sistemas legados, incluindo a
+          otimização de funcionalidades antigas e a implementação de novas
+          soluções.
+        </p>
+      </div>
     </section>
 
-<!-- Skills -->
-<section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800">
-  <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Habilidades</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Habilidades</h2>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8"
+        >
           <div class="skill-icon" onclick="exibirHabilidade('html5')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">HTML</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">HTML</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('css3')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">CSS</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">CSS</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('javascript')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">JavaScript</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">JavaScript</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('typescript')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">TypeScript</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">TypeScript</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('react')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">React</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">React</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('dotnetcore')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">.NET</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+              alt=".NET"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">.NET</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('csharp')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">C#</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+              alt="C#"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">C#</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('postgresql')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-16 h-16 mb-2">
-                </div>                                                                                                                                                    
-          <div class="skill-icon" onclick="exibirHabilidade('microsoftsqlserver')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">SQL Server</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL"
+              class="w-16 h-16 mb-2"
+            />
+          </div>
+          <div
+            class="skill-icon"
+            onclick="exibirHabilidade('microsoftsqlserver')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+              alt="SQL Server"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">SQL Server</span>
           </div>
           <div class="skill-icon" onclick="exibirHabilidade('nodejs')">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-16 h-16 mb-2">
-              <span class="text-sm font-medium">Node.js</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+              class="w-16 h-16 mb-2"
+            />
+            <span class="text-sm font-medium">Node.js</span>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
     <!-- Experience -->
     <section id="experience" class="py-20 bg-gray-100 dark:bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Experiência</h2>
-            <div class="space-y-8 max-w-3xl mx-auto">
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Desenvolvedor Fullstack</h3>
-                    <h4 class="text-lg mb-2">Vision System</h4>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Janeiro 2022 - Presente</p>
-                    <ul class="list-disc list-inside">
-                        <li>Desenvolvimento de aplicações com .NET Framework , C# e ASP.NET</li>
-                        <li>Integração e consumo de APIs .NET para aplicações mobile, com manipulação de dados em SQL Server</li>
-                        <li>Desenvolvimento de sistemas desktop utilizando VB6 e Windows Forms, com banco de dados SQL Server</li>
-                        <li>Análise e implementação de melhorias e correções em diversos aplicativos</li>
-                        <li>Versionamento de código utilizando SVN e GitHub</li>
-                    </ul>
-                </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Gerente Geral</h3>
-                    <h4 class="text-lg mb-2">Transição de Carreira</h4>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">Janeiro 2012 - Janeiro 2021</p>
-                    <ul class="list-disc list-inside">
-                        <li>Durante este período, busquei aprimorar minhas habilidades em desenvolvimento de software. Concluí cursos e participei de projetos publicos e pessoais, aplicando práticas de Clean Code e aprofundando meu conhecimento em APIs e desenvolvimento mobile.</li>
-                        
-                    </ul>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Experiência</h2>
+        <div class="space-y-8 max-w-3xl mx-auto">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Desenvolvedor Fullstack</h3>
+            <h4 class="text-lg mb-2">Vision System</h4>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Janeiro 2022 - Presente
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Desenvolvimento de aplicações com .NET Framework , C# e ASP.NET
+              </li>
+              <li>
+                Integração e consumo de APIs .NET para aplicações mobile, com
+                manipulação de dados em SQL Server
+              </li>
+              <li>
+                Desenvolvimento de sistemas desktop utilizando VB6 e Windows
+                Forms, com banco de dados SQL Server
+              </li>
+              <li>
+                Análise e implementação de melhorias e correções em diversos
+                aplicativos
+              </li>
+              <li>Versionamento de código utilizando SVN e GitHub</li>
+            </ul>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Gerente Geral</h3>
+            <h4 class="text-lg mb-2">Transição de Carreira</h4>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Janeiro 2012 - Janeiro 2021
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Durante este período, busquei aprimorar minhas habilidades em
+                desenvolvimento de software. Concluí cursos e participei de
+                projetos publicos e pessoais, aplicando práticas de Clean Code e
+                aprofundando meu conhecimento em APIs e desenvolvimento mobile.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio -->
     <section id="portfolio" class="py-20 bg-white dark:bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Portfólio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
-                    <img src="img/portfolio/passapp.png" alt="PASS-APP" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">PASS-APP</h3>
-                        <div class="flex space-x-2">
-                            <a href="https://github.com/dmresende/password-app" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors">GitHub</a>
-                            <a href="https://drive.google.com/drive/folders/1iO00Wvj_yDvbkN84Tf13IeWFjIO7KuCI" target="_blank" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors">Projeto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
-                    <img src="img/portfolio/heatemap.png" alt="Mapa de Calor" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Mapa de Calor</h3>
-                        <div class="flex space-x-2">
-                            <a href="https://github.com/dmresende/brisaEcombr" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors">GitHub</a>
-                            <a href="#" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors">Solicitar Acesso</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
-                    <img src="img/portfolio/portfolio.png" alt="Portfólio" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Portfólio</h3>
-                        <div class="flex space-x-2">
-                            <a href="https://github.com/dmresende/douglasmresende" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors">GitHub</a>
-                            <a href="https://douglasresende.com.br/" target="_blank" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors">Projeto</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Portfólio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div
+            class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/portfolio/passapp.png"
+              alt="PASS-APP"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">PASS-APP</h3>
+              <div class="flex space-x-2">
+                <a
+                  href="https://github.com/dmresende/pass-app.git"
+                  target="_blank"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition-colors"
+                  >GitHub</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/13TixKW8rn_E3xfLjV19IEJZTI-mr8c3r/view?usp=drive_link"
+                  target="_blank"
+                  class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
+                  >Projeto</a
+                >
+              </div>
             </div>
+          </div>
+          <div
+            class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/portfolio/heatemap.png"
+              alt="Mapa de Calor"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Mapa de Calor</h3>
+              <div class="flex space-x-2">
+                <a
+                  href="https://github.com/dmresende/brisaEcombr"
+                  target="_blank"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition-colors"
+                  >GitHub</a
+                >
+                <a
+                  href="#"
+                  class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
+                  >Solicitar Acesso</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/portfolio/portfolio.png"
+              alt="Portfólio"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Portfólio</h3>
+              <div class="flex space-x-2">
+                <a
+                  href="https://github.com/dmresende/douglasmresende"
+                  target="_blank"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition-colors"
+                  >GitHub</a
+                >
+                <a
+                  href="https://douglasresende.com.br/"
+                  target="_blank"
+                  class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
+                  >Projeto</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Contato</h2>
-            <div class="max-w-md mx-auto">
-              <form id="contact-form" action="https://formspree.io/f/mnnqaobl" method="POST" class="space-y-4">
-                <input type="text" name="name" placeholder="Nome" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700" required>
-                <input type="email" name="email" placeholder="E-mail" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700" required>
-                <textarea name="message" placeholder="Mensagem" rows="4" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700" required></textarea>
-                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">Enviar</button>
-            </form>
-            </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Contato</h2>
+        <div class="max-w-md mx-auto">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mnnqaobl"
+            method="POST"
+            class="space-y-4"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Nome"
+              class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Mensagem"
+              rows="4"
+              class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
     <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2023 Douglas Resende. Todos os direitos reservados.</p>
-        </div>
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2023 Douglas Resende. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
     <!-- Modal de Habilidades -->
-    <div id="skill-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md w-full mx-4">
-            <h3 id="skill-modal-title" class="text-2xl font-bold mb-4"></h3>
-            <p id="skill-modal-description" class="text-gray-600 dark:text-gray-300 mb-6"></p>
-            <button id="skill-modal-close" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors">
-                Fechar
-            </button>
-        </div>
+    <div
+      id="skill-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md w-full mx-4"
+      >
+        <h3 id="skill-modal-title" class="text-2xl font-bold mb-4"></h3>
+        <p
+          id="skill-modal-description"
+          class="text-gray-600 dark:text-gray-300 mb-6"
+        ></p>
+        <button
+          id="skill-modal-close"
+          class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition-colors"
+        >
+          Fechar
+        </button>
+      </div>
     </div>
 
     <!-- Botão Voltar ao Topo -->
-    <button id="back-to-top" class="fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
+    <button
+      id="back-to-top"
+      class="fixed bottom-5 right-5 bg-indigo-600 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
     </button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
