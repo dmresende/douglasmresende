@@ -46,24 +46,6 @@ function fecharModal() {
   modal.classList.add("hidden");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.getElementById("skill-modal");
-  const botaoFechar = document.getElementById("skill-modal-close");
-
-  botaoFechar.onclick = fecharModal;
-  modal.onclick = (evento) => {
-    if (evento.target === modal) {
-      fecharModal();
-    }
-  };
-
-  document.addEventListener("keydown", (evento) => {
-    if (evento.key === "Escape") {
-      fecharModal();
-    }
-  });
-});
-
 function criarIconesHabilidades() {
   const containerHabilidades = document.querySelector("#skills .grid");
   const habilidades = [
@@ -101,19 +83,6 @@ function criarIconesHabilidades() {
     .join("");
 }
 
-function alternarTema() {
-  const corpo = document.body;
-  const modoEscuroAtivo = corpo.classList.contains("dark-mode");
-
-  if (modoEscuroAtivo) {
-    corpo.classList.remove("dark-mode");
-    localStorage.setItem("tema", "claro");
-  } else {
-    corpo.classList.add("dark-mode");
-    localStorage.setItem("tema", "escuro");
-  }
-}
-
 const alternarTemaBtn = document.getElementById("theme-toggle");
 const html = document.documentElement;
 
@@ -142,23 +111,6 @@ document.querySelectorAll('a[href^="#"]').forEach((ancora) => {
   });
 });
 
-const observador = new IntersectionObserver(
-  (entradas) => {
-    entradas.forEach((entrada) => {
-      if (entrada.isIntersecting) {
-        entrada.target.classList.add("animate-fadeIn");
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
-
-document
-  .querySelectorAll("section > div")
-  .forEach((el) => observador.observe(el));
-
-document.addEventListener("DOMContentLoaded", criarIconesHabilidades);
-
 const botaoVoltarAoTopo = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", () => {
@@ -178,7 +130,29 @@ botaoVoltarAoTopo.addEventListener("click", () => {
   });
 });
 
+// Combinando os dois event listeners de DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function () {
+  // Configuração do modal de habilidades
+  const modal = document.getElementById("skill-modal");
+  const botaoFechar = document.getElementById("skill-modal-close");
+
+  botaoFechar.onclick = fecharModal;
+  modal.onclick = (evento) => {
+    if (evento.target === modal) {
+      fecharModal();
+    }
+  };
+
+  document.addEventListener("keydown", (evento) => {
+    if (evento.key === "Escape") {
+      fecharModal();
+    }
+  });
+
+  // Criação dos ícones de habilidades
+  criarIconesHabilidades();
+
+  // Configuração do formulário de contato
   const formulario = document.getElementById("contact-form");
 
   if (formulario) {
