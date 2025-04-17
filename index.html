@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Douglas Resende | Full Stack Developer</title>
     <link rel="icon" href="/img/home/favicon.svg" type="image/x-icon" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,6 +13,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       tailwind.config = {
@@ -51,7 +51,7 @@
             href="https://github.com/dmresende"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-white hover:text-blue-300 transition-colors"
+            class="text-white hover:text-blue-300 transition-all duration-300 hover:scale-125 hover:rotate-12"
           >
             <svg
               class="w-6 h-6"
@@ -68,7 +68,7 @@
             href="https://www.linkedin.com/in/douglasmresende/"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-white hover:text-blue-300 transition-colors"
+            class="text-white hover:text-blue-300 transition-all duration-300 hover:scale-125 hover:rotate-12"
           >
             <svg
               class="w-6 h-6"
@@ -83,7 +83,7 @@
           </a>
           <a
             href="mailto:douglasmresende@gmail.com"
-            class="text-white hover:text-blue-300 transition-colors"
+            class="text-white hover:text-blue-300 transition-all duration-300 hover:scale-125 hover:rotate-12"
           >
             <svg
               class="w-6 h-6"
@@ -97,13 +97,13 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              ></path>
+              />
             </svg>
           </a>
           <a
             href="https://drive.google.com/file/d/1mjBSUZK4EoOd-4DZKkvfbZyDECtSUbhx/view?usp=sharing"
             download
-            class="text-white hover:text-blue-300 transition-colors"
+            class="text-white hover:text-blue-300 transition-all duration-300 hover:scale-125 hover:rotate-12"
           >
             <svg
               class="w-6 h-6"
@@ -117,12 +117,12 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              ></path>
+              />
             </svg>
           </a>
           <button
             id="theme-toggle"
-            class="text-white hover:text-blue-300 transition-colors"
+            class="text-white hover:text-blue-300 transition-all duration-300 hover:scale-125 hover:rotate-12"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -148,88 +148,111 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">About</h2>
         <p class="text-lg text-center max-w-3xl mx-auto">
-          Atuo como desenvolvedor Full Stack com experiência em .NET, C#, API REST, ASP.NET, Windows Forms, TS, React Native. 
-          Desde minha transição de carreira, tenho me dedicado a aprimorar minhas habilidades. 
-          Durante minha carreira, analisei, revisei e desenvolvi soluções para problemas em sistemas corporativos, CRM, ERP's, Aplicações Web, entre outros.
-          Participei de otimizações de funcionalidades antigas e a implementação de novas soluções.
+          Atuo como desenvolvedor Full Stack com experiência em .NET, C#, API
+          REST, ASP.NET, Windows Forms, TS, React Native. Desde minha transição
+          de carreira, tenho me dedicado a aprimorar minhas habilidades. Durante
+          minha carreira, analisei, revisei e desenvolvi soluções para problemas
+          em sistemas corporativos, CRM, ERP's, Aplicações Web, entre outros.
+          Participei de otimizações de funcionalidades antigas e a implementação
+          de novas soluções.
         </p>
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800 ">
+    <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
         <div
           class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8"
         >
-
-        <div class="skill-icon" onclick="exibirHabilidade('dotnet')">
-          <img src="https://raw.githubusercontent.com/dotnet/brand/main/logo/dotnet-logo.svg" 
-          alt=".NET"
-            class="w-16 h-16 mb-2"
-          />
-        </div>
-
-        <div class="skill-icon" onclick="exibirHabilidade('csharp')">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-            alt="C#"
-            class="w-16 h-16 mb-2"
-          />
-        </div>
-
-          <div class="skill-icon" onclick="exibirHabilidade('javascript')" >
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('dotnet')"
+          >
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-              class="w-16 h-16 mb-2"
-            />
-          </div>
-
-          <div class="skill-icon" onclick="exibirHabilidade('typescript')" >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="TypeScript"
-              class="w-16 h-16 mb-2"
-            />
-          </div>
-
-          <div class="skill-icon" onclick="exibirHabilidade('nodejs')">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node.js"
-              class="w-16 h-16 mb-2"
-            />
-          </div>
-
-          <div class="skill-icon" onclick="exibirHabilidade('react')" >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="React Native"
-              class="w-16 h-16 mb-2"
-            />
-          </div>
-        
-          
-          <div class="skill-icon" onclick="exibirHabilidade('postgresql')">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-              alt="PostgreSQL"
-              class="w-16 h-16 mb-2"
+              src="https://raw.githubusercontent.com/dotnet/brand/main/logo/dotnet-logo.svg"
+              alt=".NET"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
             />
           </div>
 
           <div
-            class="skill-icon" onclick="exibirHabilidade('microsoftsqlserver')"
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('csharp')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+              alt="C#"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
+            />
+          </div>
+
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('javascript')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
+            />
+          </div>
+
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('typescript')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
+            />
+          </div>
+
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('nodejs')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
+            />
+          </div>
+
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('react')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React Native"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
+            />
+          </div>
+
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('postgresql')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
+            />
+          </div>
+
+          <div
+            class="skill-icon flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            onclick="exibirHabilidade('microsoftsqlserver')"
           >
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
               alt="SQL Server"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-2 transition-all duration-300 hover:scale-125 hover:brightness-125"
             />
           </div>
-        
         </div>
       </div>
     </section>
@@ -247,13 +270,16 @@
             </p>
             <ul class="list-disc list-inside">
               <li>
-                Desenvolvimento de aplicativo mobile em React Native para controle de automação residencial.
+                Desenvolvimento de aplicativo mobile em React Native para
+                controle de automação residencial.
               </li>
               <li>
-                Correções e implementação de melhorias em componentes existentes.
+                Correções e implementação de melhorias em componentes
+                existentes.
               </li>
               <li>
-                Controle de versionamento e colaboração em equipe utilizando Git.
+                Controle de versionamento e colaboração em equipe utilizando
+                Git.
               </li>
             </ul>
           </div>
@@ -305,10 +331,8 @@
     <section id="portfolio" class="py-20 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Portfolio</h2>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-
-           <div
+          <div
             class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
           >
             <img
@@ -334,7 +358,6 @@
               </div>
             </div>
           </div>
-
           <div
             class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
           >
@@ -373,13 +396,14 @@
               <h3 class="text-xl font-semibold mb-2">API-Chat</h3>
               <div class="flex space-x-2">
                 <a
-                  href="https://github.com/dmresende/backend-chat";" 
+                  href="https://github.com/dmresende/backend-chat"
                   target="_blank"
                   class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition-colors"
                   >GitHub</a
                 >
                 <a
-                  href="#" onclick="alert('Projeto em andamento. Fique avontade para contribuir, acesse o repositório!');"
+                  href="#"
+                  onclick="alert('Projeto em andamento. Fique avontade para contribuir, acesse o repositório!');"
                   target="_blank"
                   class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
                   >Project</a
@@ -405,7 +429,8 @@
                   >GitHub</a
                 >
                 <a
-                  href="https://chat-socket-io-dusky.vercel.app/" onclick="alert('Caso não consiga executar via vercel e render, tente baixar o projeto e executar localmente.');"
+                  href="https://chat-socket-io-dusky.vercel.app/"
+                  onclick="alert('Caso não consiga executar via vercel e render, tente baixar o projeto e executar localmente.');"
                   target="_blank"
                   class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
                   >Project</a
@@ -425,13 +450,15 @@
               <h3 class="text-xl font-semibold mb-2">Heat Map</h3>
               <div class="flex space-x-2">
                 <a
-                  href="https://github.com/dmresende/brisaEcombr" onclick="alert('Caso não tenha acesso entre em contato');"
+                  href="https://github.com/dmresende/brisaEcombr"
+                  onclick="alert('Caso não tenha acesso entre em contato');"
                   target="_blank"
                   class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition-colors"
                   >GitHub</a
                 >
                 <a
-                  href="#"onclick=" alert('Entre em contato para solicitar acesso');"
+                  href="#"
+                  onclick=" alert('Entre em contato para solicitar acesso');"
                   class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded transition-colors"
                   >Request Access</a
                 >
@@ -439,7 +466,6 @@
             </div>
           </div>
 
-          
           <div
             class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
           >
@@ -466,11 +492,7 @@
               </div>
             </div>
           </div>
-
-          
         </div>
-        </div>
-        
       </div>
     </section>
 
@@ -510,7 +532,7 @@
               type="submit"
               class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors"
             >
-            To send
+              To send
             </button>
           </form>
         </div>

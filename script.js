@@ -46,13 +46,13 @@ function fecharModal() {
 const alternarTemaBtn = document.getElementById("theme-toggle");
 const html = document.documentElement;
 
-alternarTemaBtn.addEventListener("click", () => {
+function alternarTema() {
   html.classList.toggle("dark");
   localStorage.setItem(
     "tema",
     html.classList.contains("dark") ? "escuro" : "claro"
   );
-});
+}
 
 if (
   localStorage.getItem("tema") === "escuro" ||
@@ -61,6 +61,8 @@ if (
 ) {
   html.classList.add("dark");
 }
+
+alternarTemaBtn.addEventListener("click", alternarTema);
 
 document.querySelectorAll('a[href^="#"]').forEach((ancora) => {
   ancora.addEventListener("click", function (e) {
