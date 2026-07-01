@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Douglas Resende | Full Stack Developer</title>
+    <title>Douglas Resende | Desenvolvedor .NET</title>
     <link rel="icon" href="/img/home/favicon.svg" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -13,8 +13,8 @@
         theme: {
           extend: {
             fontFamily: {
-              display: ["Syne", "sans-serif"],
-              body: ["DM Sans", "sans-serif"],
+              display: ["Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"],
             },
           },
         },
@@ -22,18 +22,18 @@
     </script>
     <style>
       :root {
-        --accent: #6EE7B7;
-        --accent-dim: #34D399;
+        --accent: #512BD4;
+        --accent-dim: #9B4F96;
         --ink: #0f1117;
         --surface: #161b27;
         --surface2: #1e2636;
         --muted: #8892a4;
-        --border: rgba(110,231,183,0.15);
+        --border: rgba(81,43,212,0.15);
       }
 
       * { box-sizing: border-box; margin: 0; padding: 0; }
 
-      html { font-family: "DM Sans", sans-serif; }
+      html { font-family: "Inter", sans-serif; }
 
       body {
         background-color: #0f1117;
@@ -79,7 +79,7 @@
         border-bottom-color: var(--border);
       }
       .nav-logo {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 800;
         font-size: 1.15rem;
         color: var(--accent);
@@ -116,14 +116,14 @@
         text-align: center;
         position: relative;
         padding: 6rem 1.5rem 4rem;
-        background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(110,231,183,0.12) 0%, transparent 70%);
+        background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(81,43,212,0.12) 0%, transparent 70%);
       }
 
       .hero-avatar {
         width: 7rem; height: 7rem;
         border-radius: 50%;
         border: 2px solid var(--accent);
-        box-shadow: 0 0 0 6px rgba(110,231,183,0.1);
+        box-shadow: 0 0 0 6px rgba(81,43,212,0.1);
         object-fit: cover;
         margin: 0 auto 1.75rem;
         display: block;
@@ -131,7 +131,7 @@
       }
 
       .hero-name {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: clamp(2.8rem, 7vw, 5.5rem);
         font-weight: 800;
         line-height: 1;
@@ -182,7 +182,7 @@
         padding: 0.6rem 1.4rem;
         background: var(--accent);
         color: #0f1117;
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 700;
         font-size: 0.85rem;
         border-radius: 4px;
@@ -192,7 +192,7 @@
       }
       .btn-primary:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(110,231,183,0.25);
+        box-shadow: 0 8px 24px rgba(81,43,212,0.25);
       }
 
       .btn-ghost {
@@ -200,7 +200,7 @@
         padding: 0.6rem 1.4rem;
         background: transparent;
         color: #e2e8f0;
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 600;
         font-size: 0.85rem;
         border-radius: 4px;
@@ -212,7 +212,7 @@
       .btn-ghost:hover {
         border-color: var(--accent);
         color: var(--accent);
-        background: rgba(110,231,183,0.05);
+        background: rgba(81,43,212,0.05);
       }
 
       .hero-socials {
@@ -236,7 +236,7 @@
       /* ── Section header ── */
       .section-label {
         display: inline-flex; align-items: center; gap: 0.6rem;
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 0.75rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -251,7 +251,7 @@
         background: var(--accent);
       }
       .section-title {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: clamp(2rem, 4vw, 3rem);
         font-weight: 800;
         letter-spacing: -0.03em;
@@ -296,7 +296,7 @@
         transform: translateY(-3px);
       }
       .stat-number {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 2rem;
         font-weight: 800;
         color: var(--accent);
@@ -339,7 +339,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: radial-gradient(circle at 50% 0%, rgba(110,231,183,0.08), transparent 70%);
+        background: radial-gradient(circle at 50% 0%, rgba(81,43,212,0.08), transparent 70%);
         opacity: 0;
         transition: opacity 0.3s;
       }
@@ -388,7 +388,7 @@
         width: 9px; height: 9px;
         border-radius: 50%;
         background: var(--accent);
-        box-shadow: 0 0 0 3px rgba(110,231,183,0.15);
+        box-shadow: 0 0 0 3px rgba(81,43,212,0.15);
       }
       .timeline-date {
         font-size: 0.75rem;
@@ -399,7 +399,7 @@
         margin-bottom: 0.5rem;
       }
       .timeline-role {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
         color: #f8fafc;
@@ -471,7 +471,7 @@
         flex: 1;
       }
       .project-title {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 1.05rem;
         font-weight: 700;
         color: #f8fafc;
@@ -534,7 +534,7 @@
         border: 1px solid var(--border);
         border-radius: 6px;
         padding: 0.75rem 1rem;
-        font-family: "DM Sans", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 0.95rem;
         color: #e2e8f0;
         outline: none;
@@ -544,7 +544,7 @@
       .form-field input:focus,
       .form-field textarea:focus {
         border-color: var(--accent);
-        box-shadow: 0 0 0 3px rgba(110,231,183,0.1);
+        box-shadow: 0 0 0 3px rgba(81,43,212,0.1);
       }
       .form-field textarea { min-height: 130px; }
       .form-submit {
@@ -552,7 +552,7 @@
         padding: 0.85rem;
         background: var(--accent);
         color: #0f1117;
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 700;
         font-size: 0.95rem;
         border: none;
@@ -564,7 +564,7 @@
       .form-submit:hover {
         background: var(--accent-dim);
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(110,231,183,0.2);
+        box-shadow: 0 8px 24px rgba(81,43,212,0.2);
       }
 
       /* ── Footer ── */
@@ -606,7 +606,7 @@
         margin-bottom: 1.25rem;
       }
       .modal-title {
-        font-family: "Syne", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 1.4rem;
         font-weight: 800;
         color: #f8fafc;
@@ -643,7 +643,7 @@
         width: 44px; height: 44px;
         border-radius: 50%;
         display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 4px 16px rgba(110,231,183,0.3);
+        box-shadow: 0 4px 16px rgba(81,43,212,0.3);
         transition: opacity 0.3s, transform 0.2s;
         opacity: 0; pointer-events: none;
       }
@@ -685,27 +685,22 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
-      <button id="theme-toggle" style="background:none;border:none;cursor:pointer;color:var(--muted);transition:color .2s" title="Toggle theme">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-        </svg>
-      </button>
     </nav>
 
     <!-- ── Hero ── -->
     <section id="home">
-      <div class="glow-blob" style="width:600px;height:600px;background:#6EE7B7;top:-200px;left:50%;transform:translateX(-50%)"></div>
+      <div class="glow-blob" style="width:600px;height:600px;background:#512BD4;top:-200px;left:50%;transform:translateX(-50%)"></div>
       <div style="position:relative;z-index:1">
         <img src="img/home/avatar.jpg" alt="Douglas Resende" class="hero-avatar" />
         <h1 class="hero-name">Douglas <span>Resende</span></h1>
-        <p class="hero-role">Full Stack Developer</p>
+        <p class="hero-role">Desenvolvedor .NET</p>
         <div class="hero-divider"></div>
         <p class="hero-bio">
-          Especialista em .NET, C# e React Native, criando soluções robustas para sistemas corporativos, CRMs e ERPs. Focado em código limpo, performance e resultados.
+          Desenvolvedor .NET, criando soluções para sistemas corporativos, CRMs e ERPs. Focado em código limpo, performance e resultados.
         </p>
         <div class="hero-actions">
           <a href="#portfolio" class="btn-primary">Ver Projetos</a>
-          <a href="https://drive.google.com/file/d/1mjBSUZK4EoOd-4DZKkvfbZyDECtSUbhx/view?usp=sharing" target="_blank" class="btn-ghost">
+          <a href="https://drive.google.com/file/d/1z_NAWlBOIaJLAwNcw0cOdMg7_d7JbIB3/view?usp=sharing" target="_blank" class="btn-ghost">
             <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
             Currículo
           </a>
@@ -717,7 +712,7 @@
           <a href="https://www.linkedin.com/in/douglasmresende/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
-          <a href="mailto:douglasmresende@gmail.com" title="E-mail">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=douglasmresende@gmail.com" target="_blank" title="E-mail">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </a>
         </div>
@@ -726,13 +721,13 @@
 
     <!-- ── About ── -->
     <section id="about">
-      <div class="glow-blob" style="width:400px;height:400px;background:#818cf8;bottom:-100px;right:-100px"></div>
+      <div class="glow-blob" style="width:400px;height:400px;background:#512BD4;bottom:-100px;right:-100px"></div>
       <div class="about-grid">
         <div class="about-text">
           <p class="section-label">Sobre mim</p>
           <h2 class="section-title">Construindo soluções que <em style="font-style:normal;color:var(--accent)">importam</em></h2>
           <p>
-            Atuo como desenvolvedor Full Stack com foco em .NET, C#, APIs REST, ASP.NET, TypeScript e React Native. Desde minha transição de carreira, tenho me dedicado a aprimorar continuamente minhas habilidades técnicas.
+            Atuo como desenvolvedor com foco em .NET, C#, APIs REST e ASP.NET. Desde minha transição de carreira, tenho me dedicado a aprimorar continuamente minhas habilidades técnicas.
           </p>
           <p>
             Analisei, revisei e desenvolvi soluções para sistemas corporativos, CRMs, ERPs e aplicações web. Participei de otimizações de funcionalidades legadas e implementação de novas soluções de alto impacto.
@@ -744,11 +739,11 @@
             <div class="stat-desc">Anos como desenvolvedor profissional</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">6+</div>
+            <div class="stat-number">6</div>
             <div class="stat-desc">Projetos no portfólio</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">9</div>
+            <div class="stat-number">7</div>
             <div class="stat-desc">Tecnologias no stack</div>
           </div>
           <div class="stat-card">
@@ -786,7 +781,6 @@
             <li>Desenvolvimento com .NET Framework, C# e ASP.NET.</li>
             <li>Correções e implementação de melhorias em componentes existentes.</li>
             <li>Controle de versionamento e colaboração em equipe utilizando Git.</li>
-            <li>Controle de versionamento Git.</li>
           </ul>
         </div>
 
@@ -949,7 +943,7 @@
 
     <!-- ── Footer ── -->
     <footer>
-      <p>&copy; 2025 <span>Douglas Resende</span>. All rights reserved.</p>
+      <p>&copy; 2026 <span>Douglas Resende</span>. All rights reserved.</p>
     </footer>
 
     <!-- ── Skill Modal ── -->

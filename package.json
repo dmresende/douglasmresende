@@ -1,0 +1,11 @@
+{
+  "name": "douglas-resende-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal de Douglas Resende - Desenvolvedor .NET",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  }
+}

@@ -4,55 +4,43 @@ const SKILLS = [
     id: "dotnet",
     name: ".NET",
     icon: "https://raw.githubusercontent.com/dotnet/brand/main/logo/dotnet-logo.svg",
-    desc: "Plataforma de desenvolvimento criada pela Microsoft para construção de aplicações robustas, escaláveis e seguras, com suporte multi-linguagem e vasto ecossistema de bibliotecas.",
+    desc: "Plataforma de desenvolvimento criada pela Microsoft para construção de aplicações seguras, com suporte multi-linguagem e vasto ecossistema de bibliotecas.",
   },
   {
     id: "csharp",
     name: "C#",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-    desc: "Linguagem de programação orientada a objetos desenvolvida pela Microsoft. Fortemente tipada, moderna e ideal para aplicações enterprise, APIs e sistemas desktop.",
-  },
-  {
-    id: "javascript",
-    name: "JavaScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    desc: "Linguagem de programação amplamente utilizada para criar interatividade em páginas web, manipulação dinâmica do DOM e construção de aplicações modernas no browser e servidor.",
-  },
-  {
-    id: "typescript",
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    desc: "Superset do JavaScript que adiciona tipagem estática ao código. Melhora a manutenibilidade, facilita a detecção de erros em tempo de desenvolvimento e eleva a qualidade de aplicações.",
-  },
-  {
-    id: "react",
-    name: "React Native",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    desc: "Framework baseado em React para construção de aplicativos móveis nativos usando JavaScript. Permite compartilhar lógica de negócio entre iOS e Android com uma única codebase.",
-  },
-  {
-    id: "nodejs",
-    name: "Node.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    desc: "Ambiente de execução JavaScript server-side baseado no V8. Permite criar APIs performáticas, microsserviços e aplicações web escaláveis com arquitetura orientada a eventos.",
-  },
-  {
-    id: "postgresql",
-    name: "PostgreSQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    desc: "Sistema de gerenciamento de banco de dados relacional open-source de alta performance. Reconhecido pela robustez, conformidade com SQL e recursos avançados como JSONB e full-text search.",
+    desc: "Linguagem de programação orientada a objetos desenvolvida pela Microsoft. Moderna e ideal para APIs, aplicações desktop e serviços.",
   },
   {
     id: "microsoftsqlserver",
     name: "SQL Server",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
-    desc: "SGBD relacional da Microsoft amplamente adotado em ambientes corporativos. Oferece alta disponibilidade, integração profunda com o ecossistema .NET e ferramentas de BI integradas.",
+    desc: "SGBD relacional da Microsoft amplamente adotado em ambientes corporativos. Oferece alta disponibilidade e integração profunda com o ecossistema .NET.",
   },
   {
-    id: "jest",
-    name: "Jest",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-    desc: "Framework de testes em JavaScript criado pelo Meta (Facebook). Simples de configurar, com suporte a mocks, snapshots e cobertura de código. Amplamente usado com React e Node.js.",
+    id: "postgresql",
+    name: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    desc: "Sistema de gerenciamento de banco de dados relacional open-source de alta performance.",
+  },
+  {
+    id: "docker",
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    desc: "Plataforma de containerização para criar, distribuir e executar aplicações de forma isolada e portável.",
+  },
+  {
+    id: "git",
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    desc: "Sistema de controle de versões distribuído, essencial para colaboração em equipe e versionamento de código.",
+  },
+  {
+    id: "vscode",
+    name: "VS Code",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    desc: "Editor de código-fonte leve e extensível da Microsoft, com suporte a múltiplas linguagens e depuração integrada.",
   },
 ];
 
@@ -108,22 +96,6 @@ window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.pageYOffset > 40);
 });
 
-// ── Theme toggle (keeps system preference) ───────────────────
-const themeBtn = document.getElementById("theme-toggle");
-
-function aplicarTema() {
-  const salvo = localStorage.getItem("tema");
-  const prefereEscuro = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const deveEscuro = salvo ? salvo === "escuro" : prefereEscuro;
-  document.documentElement.classList.toggle("dark", deveEscuro);
-}
-aplicarTema();
-
-themeBtn.addEventListener("click", () => {
-  const escuro = document.documentElement.classList.toggle("dark");
-  localStorage.setItem("tema", escuro ? "escuro" : "claro");
-});
-
 // ── Smooth scroll ─────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach((ancora) => {
   ancora.addEventListener("click", function (e) {
@@ -174,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = await res.json();
         if (data.ok) {
           btn.textContent = "Mensagem enviada! ✓";
-          btn.style.background = "#34D399";
+          btn.style.background = "#9B4F96";
           form.reset();
           setTimeout(() => {
             btn.textContent = originalText;
