@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Douglas Resende</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #1a1a2e;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 40px 50px;
+      background: #fff;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 25px;
+      border-bottom: 3px solid #512BD4;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #512BD4;
+    }
+
+    .header-text h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: -0.02em;
+    }
+
+    .header-text h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #512BD4;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 4px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #4a4a5a;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-item svg {
+      width: 14px;
+      height: 14px;
+      fill: #512BD4;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #512BD4;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    /* Experience & Education */
+    .timeline-item {
+      margin-bottom: 18px;
+      position: relative;
+      padding-left: 15px;
+      border-left: 2px solid #512BD4;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .timeline-role {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    .timeline-date {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #512BD4;
+    }
+
+    .timeline-company {
+      font-size: 0.9rem;
+      color: #6a6a7a;
+      margin-bottom: 8px;
+    }
+
+    .timeline-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .timeline-list li {
+      font-size: 0.85rem;
+      color: #4a4a5a;
+      padding: 3px 0;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .timeline-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #512BD4;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: #f0ecff;
+      color: #512BD4;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    /* About */
+    .about-text {
+      font-size: 0.9rem;
+      color: #4a4a5a;
+      line-height: 1.7;
+    }
+
+    /* Print styles */
+    @media print {
+      body { background: #fff; }
+      .page { 
+        margin: 0; 
+        padding: 30px 40px;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    
+    <!-- Header -->
+    <div class="header">
+      <img src="img/home/avatar.jpg" alt="Douglas Resende" class="avatar">
+      <div class="header-text">
+        <h1>DOUGLAS RESENDE</h1>
+        <h2>Desenvolvedor .NET</h2>
+        <div class="contact-info">
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +55 (31) 9.9156-2513
+          </span>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            douglasmresende@gmail.com
+          </span>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Chapecó, SC
+          </span>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            www.douglasresende.com.br
+          </span>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            linkedin.com/in/douglasmresende
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+      <h3 class="section-title">Sobre Mim</h3>
+      <p class="about-text">
+        Atuo como desenvolvedor com foco em .NET, C#, APIs REST e ASP.NET. Desde minha transição de carreira, tenho me dedicado a aprimorar continuamente minhas habilidades técnicas. Analisei, revisei e desenvolvi soluções para sistemas corporativos, CRMs, ERPs e aplicações web. Participei de otimizações de funcionalidades legadas e implementação de novas soluções de alto impacto.
+      </p>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <h3 class="section-title">Experiência Profissional</h3>
+      
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-role">Desenvolvedor Full Stack</span>
+          <span class="timeline-date">Abr 2025 – Até o momento</span>
+        </div>
+        <div class="timeline-company">multitms by nstech</div>
+        <ul class="timeline-list">
+          <li>Desenvolvimento com .NET Framework, C# e ASP.NET.</li>
+          <li>Correções e implementação de melhorias em componentes existentes.</li>
+          <li>Controle de versionamento e colaboração em equipe utilizando Git.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-role">Desenvolvedor Full Stack</span>
+          <span class="timeline-date">Jan 2025 – Abr 2025</span>
+        </div>
+        <div class="timeline-company">IXC Soft</div>
+        <ul class="timeline-list">
+          <li>Desenvolvimento de app mobile em React Native para controle de automação residencial.</li>
+          <li>Correções e implementação de melhorias em componentes existentes.</li>
+          <li>Controle de versionamento e colaboração em equipe utilizando Git.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-role">Desenvolvedor Full Stack</span>
+          <span class="timeline-date">Jan 2022 – Jan 2025</span>
+        </div>
+        <div class="timeline-company">Vision System</div>
+        <ul class="timeline-list">
+          <li>Desenvolvimento com .NET Framework, C# e ASP.NET.</li>
+          <li>Integração e consumo de APIs .NET para aplicações mobile com SQL Server.</li>
+          <li>Análise, melhorias e correções em diversos aplicativos corporativos.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h3 class="section-title">Habilidades</h3>
+      <div class="skills-grid">
+        <span class="skill-tag">.NET</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">ASP.NET</span>
+        <span class="skill-tag">APIs REST</span>
+        <span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -11,7 +11,7 @@ Minha formação em Direito contribuiu para o desenvolvimento de um pensamento a
 
 ## Minha Jornada Atual
 
-No momento, estou focado no desenvolvimento de sistemas de gestão CRM/ERP. Utilizo uma variedade de tecnologias, incluindo Visual Basic, C#, SSMS, AngularJS e React Native, para criar soluções eficientes e personalizadas. Estou em constante busca por conhecimento no campo do desenvolvimento de software e estou empolgado em aprender e aplicar novas tecnologias para criar soluções cada vez melhores.
+No momento, estou focado no desenvolvimento de sistemas de gestão CRM/ERP. Utilizo uma variedade de tecnologias, incluindo C#, .NET, ASP.NET e SQL Server, para criar soluções eficientes e personalizadas. Estou em constante busca por conhecimento no campo do desenvolvimento de software e estou empolgado em aprender e aplicar novas tecnologias para criar soluções cada vez melhores.
 
 ## O Que Esperar
 
