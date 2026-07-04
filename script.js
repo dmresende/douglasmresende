@@ -1,46 +1,52 @@
 // ── Skills data ──────────────────────────────────────────────
 const SKILLS = [
   {
-    id: "dotnet",
-    name: ".NET",
-    icon: "https://raw.githubusercontent.com/dotnet/brand/main/logo/dotnet-logo.svg",
-    desc: "Plataforma de desenvolvimento criada pela Microsoft para construção de aplicações seguras, com suporte multi-linguagem e vasto ecossistema de bibliotecas.",
-  },
-  {
     id: "csharp",
     name: "C#",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-    desc: "Linguagem de programação orientada a objetos desenvolvida pela Microsoft. Moderna e ideal para APIs, aplicações desktop e serviços.",
+    desc: "Linguagem de programação orientada a objetos desenvolvida pela Microsoft, ideal para APIs, aplicações desktop e serviços.",
+  },
+  {
+    id: "dotnet",
+    name: ".NET / ASP.NET Core",
+    icon: "https://raw.githubusercontent.com/dotnet/brand/main/logo/dotnet-logo.svg",
+    desc: "Plataforma de desenvolvimento da Microsoft para aplicações web, APIs e serviços de alta performance e escalabilidade.",
   },
   {
     id: "microsoftsqlserver",
     name: "SQL Server",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
-    desc: "SGBD relacional da Microsoft amplamente adotado em ambientes corporativos. Oferece alta disponibilidade e integração profunda com o ecossistema .NET.",
+    desc: "SGBD relacional da Microsoft com foco em otimização de queries, procedures e integração com o ecossistema .NET.",
   },
   {
     id: "postgresql",
     name: "PostgreSQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    desc: "Sistema de gerenciamento de banco de dados relacional open-source de alta performance.",
+    desc: "Banco de dados relacional open-source de alta performance e confiabilidade.",
   },
   {
     id: "docker",
     name: "Docker",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    desc: "Plataforma de containerização para criar, distribuir e executar aplicações de forma isolada e portável.",
+    desc: "Containerização de aplicações para deploy consistente e portátil entre ambientes.",
   },
   {
     id: "git",
-    name: "Git",
+    name: "Git / GitLab",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    desc: "Sistema de controle de versões distribuído, essencial para colaboração em equipe e versionamento de código.",
+    desc: "Controle de versionamento, branches, Pull Requests e colaboração em equipe.",
   },
   {
     id: "vscode",
     name: "VS Code",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-    desc: "Editor de código-fonte leve e extensível da Microsoft, com suporte a múltiplas linguagens e depuração integrada.",
+    desc: "Editor de código-fonte com suporte a debug, extensões e integração com .NET.",
+  },
+  {
+    id: "apis",
+    name: "APIs REST / SOAP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    desc: "Desenvolvimento e integração de APIs RESTful e serviços SOAP para comunicação entre sistemas.",
   },
 ];
 
